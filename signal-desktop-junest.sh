@@ -3,7 +3,7 @@
 # NAME OF THE APP BY REPLACING "SAMPLE"
 APP=signal-desktop
 BIN="$APP" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
-DEPENDENCES="ca-certificates "
+DEPENDENCES="ca-certificates xapp libgnomekbd"
 #BASICSTUFF="binutils debugedit gzip"
 #COMPILERS="base-devel"
 
@@ -345,7 +345,7 @@ echo ""
 BINSAVED="certificates SAVEBINSPLEASE" # Enter here keywords to find and save in /usr/bin
 SHARESAVED="certificates SAVESHAREPLEASE" # Enter here keywords or file/directory names to save in both /usr/share and /usr/lib
 lib_browser_launcher="gio-launch-desktop libdl.so libpthread.so librt.so libasound.so libX11-xcb.so" # Libraries and files needed to launche the default browser
-LIBSAVED="pk p11 alsa jack pipewire pulse SAVELIBSPLEASE $lib_browser_launcher" # Enter here keywords or file/directory names to save in /usr/lib
+LIBSAVED="pk p11 alsa jack pipewire pulse libudev $lib_browser_launcher" # Enter here keywords or file/directory names to save in /usr/lib
 
 # Save files in /usr/bin
 function _savebins() {
